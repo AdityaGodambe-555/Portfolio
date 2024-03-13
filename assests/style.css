@@ -1,0 +1,268 @@
+:root{
+    --c1:white;
+    --c2:black;
+}
+
+.darkmode{
+    --c2:white;
+    --c1:black;
+}
+
+body{
+    background-color: var(--c1);
+}
+
+
+nav{
+
+    position: fixed;
+    top: 0px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+.navRight{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.navRight img{
+    padding-right: 15px;
+    border-radius: 50%;
+}
+.navRight h2{
+    color: var(--c2);
+}
+
+.navleft{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+
+.navleft a{
+    text-decoration: none;
+    color: var(--c2);
+    font-size: larger;
+    font-weight: bold;
+    padding: 0px 15px;
+}
+
+aside{
+    position: absolute;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60vh;
+    left: 30px;
+    z-index: 100;
+}
+
+.social a{
+    margin-top: 15px;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.mail{
+    position: fixed;
+    top: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: bolder;
+    right: 20px;
+    z-index: -2;
+}
+
+#rota{
+    writing-mode: vertical-rl;
+    color: var(--c2);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    padding: 0px 100px;
+    margin: 185px 0px 0px 10px;
+}
+
+
+.btn-x{
+    border-radius: 60px 60px 60px 0px;
+    padding: 10px 25px;
+    background-color: #ffc800;
+    font-size: 25px;
+    font-weight: bolder;
+    color: var(--c1);
+    width: 75px;
+    margin-bottom: 15px;
+}
+
+.name{
+    padding-top: 30px;
+    font-size: 50px;
+    color: var(--c2);
+}
+
+.name .dif{
+    color: #737373;
+    text-decoration: underline;
+}
+
+.hello p{
+    font-size: 19px;
+    line-height: 25px;
+    width: 40vw;
+    margin-right: 150px;
+    color: var(--c2);
+}
+.bgphoto{
+    position: relative;
+}
+.photo{
+    margin: 0px 10px;
+    background-color: #00000000;
+    filter: drop-shadow(0 0 0.75rem var(--c2));
+}
+.bgpho{
+    position: fixed;
+    width: 20%;
+    top:10vh;
+    right: 25vw;
+    z-index: -1;
+    filter: drop-shadow(0 0 0.75rem var(--c2));
+}
+
+.bgphoto:hover{
+    transition: transform 0.5s ;
+    transform: translateX(-50px);
+}
+.touch{
+    margin: 50px 150px;
+    
+}
+
+.touch a{
+    margin-left: 140px;
+    text-decoration: none;
+    color:var(--c1);
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 10px 5px 5px rgb(143, 143, 143);
+ }
+
+ .touch .resume{
+    background-color: #e66416;
+    color: var(--c2);
+ }
+ .touch .gmail{
+    background-color: #787878;
+    color: var(--c2);
+ }
+
+.about{
+    margin-top: 90px;
+    margin-left: 20vw;
+    width: 60vw;
+    color: var(--c2);
+}
+
+.about .this{
+    font-size: 1.8vw;
+    font-weight: 900;
+    
+}
+
+.this hr{
+    width: 40vw;
+    border-top: 2px solid var(--c2); 
+    margin-left: 20vw;
+}
+
+p:nth-child(2){
+    margin-top: 70px;
+}
+
+.about p{
+    font-size: 2.4vh;
+}
+
+.about .downhr{
+    width: 10vw;
+    border-top: 2px solid var(--c2); 
+}
+
+.grey{
+    position: fixed;
+    left: -300px;
+    top: 15px;
+    width: 45%;
+    filter: drop-shadow(0 0 0.75rem var(--c2));
+}
+
+.hand{
+    position: fixed;
+    width: 30%;
+    left: -170px;
+    bottom: 55vh;
+    filter: drop-shadow(0 0 0.75rem var(--c2));
+}
+
+.yello{
+    position: fixed;
+    width: 15%;
+    bottom: 0px;
+    left: 25vw;
+    filter: drop-shadow(0 0 0.75rem var(--c2));
+}
+
+.grey2{
+    position: fixed;
+    width: 20%;
+    right: 10vw;
+    bottom: 0px;
+    transform: rotate(150deg);
+    filter: drop-shadow(0 0 0.75rem var(--c2));
+}
+
+.yello2{
+    position: fixed;
+    right: -300px;
+    top: -50px;
+    transform: rotate(-50deg);
+    z-index: -100;
+    filter: drop-shadow(0 0 0.75rem var(--c2));
+
+
+}
+
+#theme{
+    cursor: pointer;
+
+}
+
+.navleft a:hover{
+    transform: scale(1.5);
+    transition: transform 1s;
+    text-shadow: 2px 2px #fff200;
+}
+
+.navRight img:hover{
+    transform: scale(1.5);
+    filter: drop-shadow(5px 3px 2px red );
+    transition: transform 1s;
+}
