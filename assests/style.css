@@ -148,10 +148,10 @@ section{
     filter: drop-shadow(0 0 0.75rem var(--c2));
 }
 
-.bgphoto:hover{
+/* .bgphoto:hover{
     transition: transform 0.5s ;
     transform: translateX(-50px);
-}
+} */
 .touch{
     margin: 50px 150px;
     
